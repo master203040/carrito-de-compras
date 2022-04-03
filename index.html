@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Carrito de Compras | DOM</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/skeleton.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="shortcut icon" href="./img/cart.png" type="image/x-icon">
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container">
+        <div class="row">
+          <div class="four columns">
+          </div>
+          <div class="two columns u-pull-right">
+            <ul>
+              <li class="submenu">
+                <img src="img/cart.png" id="img-carrito" />
+                <div id="carrito">
+                  <table id="lista-carrito" class="u-full-width">
+                    <thead>
+                      <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+
+                  <a href="#" id="vaciar-carrito" class="button u-full-width"
+                    >Vaciar Carrito</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="six columns">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="lista-cursos" class="container">
+      <h1 id="encabezado" class="encabezado"><span>Cursos En Línea</span></h1>
+      <div  id="row" class="row">
+
+        <div class="four columns">
+          <div class="card">
+            <img src="img/js.png" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>JavaScript Moderno</h4>
+              <p>Jaime Zapata</p>
+              <p class="precio">$220000 <span class="u-pull-right">$170000</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                id="boton"
+                >Agregar Al Carrito</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="four columns">
+          <div class="card">
+            <img src="img/php.png" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Máster en PHP</h4>
+              <p>Jaime Zapata</p>
+              <p class="precio">$350000 <span class="u-pull-right">$270000</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="2"
+                >Agregar Al Carrito</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="four columns">
+          <div class="card">
+            <img src="img/java.jpg" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Java EE</h4>
+              <p>Jaime Zapata</p>
+              <p class="precio">$300000 <span class="u-pull-right">$200000</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="3"
+                >Agregar Al Carrito</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/pedidos.js"></script>
+  </body>
+</html>
